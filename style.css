@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-size: 62.5%;
+  -ff-primary: "Poppins", sans-serif;
+  --text-color: #303030;
+  --primary-color: #092d38;
+}
+body {
+  font-size: 1.6rem;
+  color: var(--text-color);
+  background-color: #000;
+}
+body * {
+  font-family: var(-ff-primary);
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header img {
+  width: 15rem;
+}
+input {
+  width: 33rem;
+  padding: 8px 17px;
+  background-color: #06181c;
+  border: none;
+  color: #7c7c8a;
+}
+input::placeholder {
+  padding: 1.2rem;
+  color: #7c7c8a;
+  background-color: #06181c;
+}
+input + button {
+  background-color: #065e7c;
+  border-radius: 4px;
+  border: none;
+  color: #fff;
+  padding: 8px 17px;
+}
+input + button:hover {
+  background-color: #fff;
+  color: #065e7c;
+}
+
+table {
+  width: 970px;
+  border: 1px solid var(--primary-color);
+  overflow: hidden;
+  border-radius: 10px;
+
+  border-collapse: collapse;
+
+  margin: 5rem -0.7rem;
+ 
+}
+
+table thead {
+  background-color: var(--primary-color);
+
+  color: #fff;
+}
+.userInit {
+  width: 970px;
+  height: 410px;
+  border-radius: 0 0  1rem 1rem;
+}
+.user img {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.user a {
+  text-decoration: none;
+  border: none;
+  color: white;
+}
+table td {
+  padding: 1.5rem;
+  text-align: center;
+}
+td.user {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+td.user a p {
+  font-weight: bold;
+}
+table th {
+  text-align: left;
+  font-weight: normal;
+  padding: 1.5rem;
+}
+table tbody {
+  background-color: #06161b80;
+}
+table button {
+  background-color: transparent;
+  color: #f52a3b;
+  border: none;
+}
+table button:hover {
+  color: #630f18;
+}
+.repositories,
+.followers {
+  color: #fff;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+#app {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+table tr:nth-child(even) {
+  background-color: #06181c;
+
+  border-top: 1px solid #4a808c;
+}
+table tr:nth-child(odd) {
+  background-color: rgba(6, 22, 27, 0.5);
+}
